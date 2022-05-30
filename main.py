@@ -4,6 +4,7 @@ import requests
 from collections import defaultdict
 
 APP_URL = f"https://sintezzz.herokuapp.com/{TOKEN}"
+bot = telebot.TeleBot(TOKEN)
 server = Flask(__name__)
 
 @server.route("/" + TOKEN, methods=["POST"]
@@ -54,7 +55,7 @@ def synthesize(text1, speed1, gender1):
 
     print("Мы закончили создавать файл с текстом", text1, "Это файл", OUTPUT)
 
-bot = telebot.TeleBot('5300865628:AAEVwVk5b1lwzwTGUAktk008eQG-tfHkFzc')
+# bot = telebot.TeleBot('5300865628:AAEVwVk5b1lwzwTGUAktk008eQG-tfHkFzc')
 # Функция, обрабатывающая команду /start
 @bot.message_handler(commands = ["start"])
 def start(message):
