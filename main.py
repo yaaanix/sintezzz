@@ -6,8 +6,7 @@ from flask import Flask, request
 
 
 
-bot = 'bot'
-botik = telebot.TeleBot(bot)
+bot = telebot.TeleBot('5300865628:AAEVwVk5b1lwzwTGUAktk008eQG-tfHkFzc')
 server = Flask(__name__)
 HEROKU_APPNAME = 'sintezzz'
 
