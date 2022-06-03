@@ -150,9 +150,11 @@ def bot_message(message):
             bot.send_message(message.chat.id, 'Хочешь загрузить свою сказку или послушать из библиотеки?', reply_markup = markup)
         elif message.text == 'Да, я не хочу слушать ваши сказки':
             bot.send_message(message.chat.id, 'Прощай и ничего не обещай. И ничего не говори. А чтоб понять мою печаль, в пустое небо посмотри!', reply_markup=types.ReplyKeyboardRemove())
+try: 
+    bot.polling(none_stop=True)
+except Exception:
+    pass
 
-
-bot.polling(none_stop=True)
 
 @server.route(f"/{bot}", methods=['POST'])
 def getMessage():
