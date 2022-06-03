@@ -85,7 +85,7 @@ def bot_message(message):
             item11 = types.KeyboardButton('Лиса и заяц')
             item12 = types.KeyboardButton('Мойдодыр')
             item13 = types.KeyboardButton('Гуси-лебеди')
-            item14 = types.KeyboardButton('Под грибами')
+            item14 = types.KeyboardButton('Под грибом')
             item15 = types.KeyboardButton('Принцесса на горошине')
             markup.add(item6, item7, item8, item9, item10, item11, item12, item13, item14, item15)
             bot.send_message(message.chat.id, 'Выбери сказку из списка', reply_markup = markup)
@@ -98,7 +98,7 @@ def bot_message(message):
             markup.add(item16,item17, item18)
             bot.send_message(message.chat.id, 'Выбери скорость, с которой хочешь прослушать сказку',  reply_markup = markup)
 
-        elif message.text in ['Колобок', 'Теремок', 'Айболит', 'Вредная кошка', 'Красная шапочка', 'Лиса и заяц', 'Мойдодыр', 'Гуси-лебеди', 'Под грибами', 'Принцесса на горошине']:
+        elif message.text in ['Колобок', 'Теремок', 'Айболит', 'Вредная кошка', 'Красная шапочка', 'Лиса и заяц', 'Мойдодыр', 'Гуси-лебеди', 'Под грибом', 'Принцесса на горошине']:
             markup = types.ReplyKeyboardMarkup(resize_keyboard = True)
             item16 = types.KeyboardButton('Маленькая скорость')
             item17 = types.KeyboardButton('Средняя скорость')
