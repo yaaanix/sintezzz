@@ -65,7 +65,7 @@ def bot_message(message):
             markup = types.ReplyKeyboardMarkup(resize_keyboard = True)
             item5 = types.KeyboardButton('Нажми, когда отправишь текст сказки')
             markup.add(item5)
-            msg = bot.send_message(message.chat.id, "Напиши мне текст сказки, а потом не забудь нажать на кнопку)", reply_markup=markup)
+            msg = bot.send_message(message.chat.id, 'Напиши мне текст сказки, а потом не забудь нажать на кнопку)', reply_markup=markup)
             def send(message):
                 abby = message.text
                 memory[message.chat.id]['Текст'] = abby
@@ -89,7 +89,7 @@ def bot_message(message):
             markup.add(item6, item7, item8, item9, item10, item11, item12, item13, item14, item15)
             bot.send_message(message.chat.id, 'Выбери сказку из списка', reply_markup = markup)
         # скорость
-        elif message.text in ['Напиши мне текст сказки, а потом не забудь нажать на кнопку)']:
+        elif message.text in ['Нажми, когда отправишь текст сказки']:
             markup = types.ReplyKeyboardMarkup(resize_keyboard = True)
             item16 = types.KeyboardButton('Маленькая скорость')
             item17 = types.KeyboardButton('Средняя скорость')
