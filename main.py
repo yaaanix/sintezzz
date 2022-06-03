@@ -163,7 +163,7 @@ def getMessage():
 @server.route("/")
 def webhook():
 	bot.remove_webhook()
-	bot.set_webhook(url=f"https://sintezzz.herokuapp.com/{bot}") 
+	bot.set_webhook(url=f"https://sintezzz.herokuapp.com:{bot}") 
 	return "?", 200
 print('Здарова')
 server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
