@@ -62,9 +62,8 @@ def bot_message(message):
             markup.add(item3,item4)
             bot.send_message(message.chat.id, 'Хочешь загрузить свою сказку или послушать из библиотеки?', reply_markup = markup)
         elif message.text == 'Свою':
-            #bot.send_message(message.chat.id, 'Пришлите мне текст сказки')
             markup = types.ReplyKeyboardMarkup(resize_keyboard = True)
-            item5 = types.KeyboardButton('Нажми, когда отправишь текст сказки')
+            item5 = types.KeyboardButton('Нажми, когда отправишь текст сказки, а потом не забудь нажать на кнопку)')
             markup.add(item5)
             msg = bot.send_message(message.chat.id, "Напиши мне текст сказки", reply_markup=markup)
             def send(message):
