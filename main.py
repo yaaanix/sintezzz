@@ -15,7 +15,7 @@ memory = defaultdict(dict)
 OUTPUT = "audio.ogg"
 def synthesize(text1, speed1, gender1):
     print("Мы начали создавать файл с текстом", text1)
-    token = "t1.9euelZqNi5OcyZOOkseeyJKZnI_Lie3rnpWanI7IxpvNzJ6NnZyXlMeZyJPl9PdGLA5r-e8zNiye3fT3BlsLa_nvMzYsng.7ULLTuKZGt8zi29yW4JfB1X9w_JkUMCCAYuADK3DL3BdylqfUWreLfK8Mk_7qZ2RKwoLUTVLD3Px5_diiUucCA"
+    token = "t1.9euelZrOk8qYlJrNjp6MmZzGk82Ul-3rnpWanI7IxpvNzJ6NnZyXlMeZyJPl8_cNWgFr-e83Ultb_N3z900If2r57zdSW1v8.lHk25wosjLXVBB8GnR8L0TNJNbiZ4BkvVncfEqOw_bQeEYLZC6Q4wRQc4lU3yy85C_yQppLixLKqdG6xOKbMCw"
     folder_id = "b1gap88d08l35fj9vh1u"
     url = 'https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize'
     headers = {
